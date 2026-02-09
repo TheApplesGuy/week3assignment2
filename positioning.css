@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: white;
+    color: #111;
+}
+
+:root {
+    --jump-width: 220px;
+    --header-height: 110px;
+}
+
+#jumpMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--jump-width);
+    height: 100vh;
+    background: #c79b2a;
+    padding: 16px;
+    border-right: 2px solid black;
+}
+
+#jumpMenu h2 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#jumpMenu a {
+    display: block;
+    padding: 10px 6px;
+    font-size: 1.2rem;
+    color: blue;
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: var(--jump-width);
+    width: calc(100% - var(--jump-width));
+    height: var(--header-height);
+    background: red;
+    border-bottom: 2px solid black;
+    text-align: center;
+    z-index: 5;
+}
+
+header p {
+    margin: 10px 0 8px 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+header nav button {
+    width: 180px;
+    padding: 10px 14px;
+    font-size: 1.1rem;
+    background: blue;
+    color: white;
+    border: 2px solid black;
+}
+
+main {
+    margin-left: var(--jump-width);
+    padding-top: calc(var(--header-height) + 20px);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 90px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px 0 24px 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 34px 40px;
+}
+
+#container article {
+    width: 300px;
+    padding: 12px;
+    background: white;
+}
+
+#container article h2 {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 0 0 10px 0;
+}
+
+#container article p {
+    margin: 0 0 10px 0;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+#container article a {
+    color: blue;
+}
+
+#thanks {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #9dd3f5;
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 18px 26px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
