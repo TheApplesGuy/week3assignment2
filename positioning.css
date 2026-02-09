@@ -66,16 +66,22 @@ header p {
 header nav {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 70px;
+    background: black;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 header nav button {
     width: 180px;
-    padding: 10px 14px;
+    padding: 15px 20px;
     font-size: 1.1rem;
     background: blue;
     color: white;
-    border: 2px solid black;
+    border-color: blue;
 }
 
 main {
